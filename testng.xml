@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+		<listener class-name="utilities.Reporting" />
+	</listeners>
+
+
+  <test thread-count="5" name="Test">
+    <parameter name="browser" value="chrome" />
+    <classes>
+     
+          <class name="testCases.TC_001_Login"/>
+<!--<class name="testCases.TC_002_Land"/>-->
+      <!--    <class name="testCases.TC_003_LandList"/>-->
+   <!--   <class name="testCases.TC_004_HouseandLandList"/>-->
+    <!--   <class name="testCases.TC_005_CreatePackage"/>-->
+    <!-- <class name="testCases.TC_006_HomesRanges"/>-->
+     <!--  <class name="testCases.TC_007_HomeDesign"/>-->
+     <!--   <class name="testCases.TC_008_HomePlan"/>-->
+ <!--     <class name="testCases.TC_009_Adminview"/>-->
+  <!-- <class name="testCases.TC_010_Permissions"/>-->
+    <!-- <class name="testCases.TC_011_ExtAgent"/> --> 
+     <!--   <class name="testCases.TC_013_DropDownTest"/> -->
+  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
