@@ -13,6 +13,7 @@
      
           <class name="testCases.TC_001_Login"/>
 <!--<class name="testCases.TC_002_Land"/>-->
+	    
       <!--    <class name="testCases.TC_003_LandList"/>-->
    <!--   <class name="testCases.TC_004_HouseandLandList"/>-->
     <!--   <class name="testCases.TC_005_CreatePackage"/>-->
