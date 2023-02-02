@@ -674,7 +674,7 @@ lp1.newproBranch();
 //			
 //			logger.info("lot deactivation unsucessfull");
 //		}
-//		
+		
 	}
 	
 	public static void setClipboard(String File) {
