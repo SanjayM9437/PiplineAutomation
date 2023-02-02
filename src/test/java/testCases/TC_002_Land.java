@@ -500,90 +500,90 @@ lp1.newproBranch();
 		
 	}
 //	
-//	@Test(priority=4,dependsOnMethods="landTest")
-//	public void AddProDoc() throws InterruptedException, AWTException {
-//		
-//		LandPage lp1=new LandPage(driver);
-//		
-//		Thread.sleep(3000);
-//		
-//		lp1.clickAddprodocButton();
-//		
-//		String prodocName = randomestring();
-//		lp1.setproDocName(prodocName);
-//		
-//		
-//		try {
-//			boolean prodocerrmsg = driver.findElement(By.xpath("//*[@id=\"assetname-error\"]")).isDisplayed();
-//			if(prodocerrmsg==true) {
-//				
-//				logger.info("Enter or check the Project Doc Name");
-//			}
-//			}catch(Exception e) {
-//				logger.info("Enter Project Doc Name is correct");
-//			}
-//		
-//		lp1.proDocDropdown();
-//		lp1.clickproDUpButton();
-//		
-//        Thread.sleep(3000);
-//		
-//		uploadFile("C:\\Users\\Terralogic\\Desktop\\Evoke Brochure.pdf");
-//		
-//		Thread.sleep(10000);
-//		
-//	try {
-//		
-//			boolean loadbutton = driver.findElement(By.xpath("//*[@id=\"assetdropzonePreview\"]/div/div[3]")).isDisplayed();
-//			
-//			if(loadbutton!=true) {
-//				
-//				logger.info("click on Add button");
-//			}
-//		}catch(Exception e) {
-//			
-//		}
-//		
-//		WebElement PDcheckbox = driver.findElement(By.xpath("//*[@id=\"ca-estate-asset-add-edit-form\"]/table/tbody/tr[4]/td[2]"));
-//		//If the checkbox is unchecked then isSelected() will return false 
-//		//and NOT of false is true, hence we can click on checkbox
-//		if(!PDcheckbox.isSelected()) {
-//			PDcheckbox.click();
-//		}else {
-//			logger.info("Already selected");
-//		}
-//		
-//		WebElement PDcheckbox1 = driver.findElement(By.xpath("//*[@id=\"ca-estate-asset-add-edit-form\"]/table/tbody/tr[5]/td[2]"));
-//		//If the checkbox is unchecked then isSelected() will return false 
-//		//and NOT of false is true, hence we can click on checkbox
-//		if(!PDcheckbox1.isSelected()) {
-//			PDcheckbox1.click();
-//		}else {
-//			logger.info("Already selected");
-//		}
-//		
-//		
-//		lp1.clickaddproDOC();
-//		
-//		try {
-//			boolean proerrmsg3 = driver.findElement(By.xpath("//*[@id=\"assetImageUrl-error\"]")).isDisplayed();
-//			if(proerrmsg3==true) {
-//				
-//				logger.info("Check the mandatory fields");
-//			}else {
-//				logger.info("Project drip  selected");
-//			}
-//			}catch(Exception e) {
-//				
-//			}
-//		
-//		Thread.sleep(5000);
-//		
-//		lp1.clickConfirmproDoc();
-//		logger.info("Document added successfully for Phase");
-//		
-//	}
-//	
+	@Test(priority=4,dependsOnMethods="landTest")
+	public void AddProDoc() throws InterruptedException, AWTException {
+		
+		LandPage lp1=new LandPage(driver);
+		
+		Thread.sleep(3000);
+		
+		lp1.clickAddprodocButton();
+		
+		String prodocName = randomestring();
+		lp1.setproDocName(prodocName);
+		
+		
+		try {
+			boolean prodocerrmsg = driver.findElement(By.xpath("//*[@id=\"assetname-error\"]")).isDisplayed();
+			if(prodocerrmsg==true) {
+				
+				logger.info("Enter or check the Project Doc Name");
+			}
+			}catch(Exception e) {
+				logger.info("Enter Project Doc Name is correct");
+			}
+		
+		lp1.proDocDropdown();
+		lp1.clickproDUpButton();
+		
+       Thread.sleep(3000);
+		
+		uploadFile("C:\\Users\\Terralogic\\Desktop\\Evoke Brochure.pdf");
+		
+		Thread.sleep(10000);
+		
+	try {
+		
+			boolean loadbutton = driver.findElement(By.xpath("//*[@id=\"assetdropzonePreview\"]/div/div[3]")).isDisplayed();
+			
+			if(loadbutton!=true) {
+				
+				logger.info("click on Add button");
+			}
+		}catch(Exception e) {
+			
+		}
+		
+		WebElement PDcheckbox = driver.findElement(By.xpath("//*[@id=\"ca-estate-asset-add-edit-form\"]/table/tbody/tr[4]/td[2]"));
+		//If the checkbox is unchecked then isSelected() will return false 
+		//and NOT of false is true, hence we can click on checkbox
+		if(!PDcheckbox.isSelected()) {
+			PDcheckbox.click();
+		}else {
+			logger.info("Already selected");
+		}
+		
+		WebElement PDcheckbox1 = driver.findElement(By.xpath("//*[@id=\"ca-estate-asset-add-edit-form\"]/table/tbody/tr[5]/td[2]"));
+		//If the checkbox is unchecked then isSelected() will return false 
+		//and NOT of false is true, hence we can click on checkbox
+		if(!PDcheckbox1.isSelected()) {
+			PDcheckbox1.click();
+		}else {
+			logger.info("Already selected");
+		}
+		
+		
+		lp1.clickaddproDOC();
+		
+		try {
+			boolean proerrmsg3 = driver.findElement(By.xpath("//*[@id=\"assetImageUrl-error\"]")).isDisplayed();
+			if(proerrmsg3==true) {
+				
+				logger.info("Check the mandatory fields");
+			}else {
+				logger.info("Project drip  selected");
+			}
+			}catch(Exception e) {
+				
+			}
+		
+		Thread.sleep(5000);
+		
+		lp1.clickConfirmproDoc();
+		logger.info("Document added successfully for Phase");
+		
+	}
+	
 	@Test(priority=5,dependsOnMethods="landTest")
 	public void AddProDrip() throws InterruptedException, AWTException {
 		
